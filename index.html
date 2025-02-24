@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1 class="logo">Iker Alvis Veloso</h1>
-    </header>
-    
     <div class="container">
         <aside class="sidebar">
+            <h1 class="logo">Iker Alvis Veloso</h1>
             <nav>
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
@@ -22,54 +22,77 @@
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="socials">
-                <a href="https://github.com/ikeralvis" target="_blank" class="social-icon">GitHub</a>
-                <a href="https://linkedin.com/in/iker-veloso" target="_blank" class="social-icon">LinkedIn</a>
+            <div class="social-icons">
+                <a href="https://github.com/ikeralvis" target="_blank"><img src="github.png" alt="GitHub"></a>
+                <a href="https://linkedin.com/in/iker-veloso" target="_blank"><img src="linkedin.png"
+                        alt="LinkedIn"></a>
             </div>
         </aside>
-        
+
         <main class="content">
             <section id="inicio" class="hero">
                 <h2>Hola, soy <span class="highlight">Iker Alvis Veloso</span></h2>
                 <p>Desarrollador y estudiante de Ingeniería Informática</p>
-            </section>
-            
-            <section id="sobre-mi" class="content">
-                <h2>Sobre Mí</h2>
-                <p>Soy estudiante de Ingeniería Informática en la Universidad de Deusto, apasionado por el desarrollo web y el software en general. Me interesa especialmente el backend y frameworks como <span class="highlight">Django</span> y <span class="highlight">Spring Boot</span>, con los que he trabajado en varios proyectos. <span class="highlight">Siempre estoy aprendiendo nuevas tecnologías</span> y buscando mejorar mis habilidades para desarrollar software de calidad.</p>
+                <div class="buttons">
+                    <a href="#proyectos" class="btn">Ver Proyectos</a>
+                    <a href="#contacto" class="btn-outline">Contacto</a>
+                </div>
             </section>
 
-            <section id="proyectos" class="content">
+            <section id="sobre-mi" class="content-section">
+                <h2>Sobre Mí</h2>
+                <p>
+                Soy un estudiante de Ingeniería Informática en la Universidad de Deusto, actualmente en mi tercer año.
+                Apasionado por el desarrollo de software, disfruto especialmente programar en Python y Java, aunque
+                también tengo experiencia en C y C++.
+                </p> <br>
+                <p>
+                Me interesa el desarrollo web y el uso de frameworks modernos como Django, Vue y Spring Boot, que me
+                permiten crear aplicaciones robustas y eficientes. Siempre estoy en búsqueda de nuevos desafíos para
+                seguir aprendiendo y mejorando mis habilidades.
+                </p><br>
+                <p>
+                Además de la programación, tengo un fuerte interés en la gestión de proyectos y el trabajo en equipo.
+                Poseo competencias en metodologías ágiles, especialmente Scrum, y tengo experiencia en la gestión de
+                equipos, fomentando la colaboración y la eficiencia en el desarrollo de software.
+                </p><br>
+                <p>
+                Me considero una persona proactiva, resolutiva y con ganas de seguir creciendo en el mundo de la
+                tecnología. Siempre estoy abierto a nuevas oportunidades donde pueda aplicar mis conocimientos y seguir
+                aprendiendo.
+                </p>
+            </section>
+
+            <section id="proyectos" class="content-section">
                 <h2>Mis Proyectos</h2>
                 <div class="project-grid">
                     <div class="project-card">
                         <h3>Blog Londres</h3>
-                        <p>Aplicación web para compartir experiencias y artículos sobre Londres.</p>
+                        <p>Plataforma para compartir experiencias y guías sobre Londres.</p>
                         <a href="https://github.com/ikeralvis/BlogLondres" target="_blank" class="btn">Ver en GitHub</a>
                     </div>
                     <div class="project-card">
                         <h3>Galería de Arte</h3>
-                        <p>Plataforma interactiva para visualizar y gestionar obras de arte.</p>
-                        <a href="https://github.com/ikeralvis/GaleriaArte-IW" target="_blank" class="btn">Ver en GitHub</a>
+                        <p>Sitio web interactivo para explorar y gestionar obras de arte digitales.</p>
+                        <a href="https://github.com/ikeralvis/GaleriaArte-IW" target="_blank" class="btn">Ver en
+                            GitHub</a>
                     </div>
                     <div class="project-card">
                         <h3>Strava DS5-2</h3>
-                        <p>Proyecto relacionado con el análisis de datos deportivos.</p>
-                        <a href="https://github.com/ikeralvis/strava-DS5-2" target="_blank" class="btn">Ver en GitHub</a>
+                        <p>Proyecto de análisis de datos deportivos basado en Strava.</p>
+                        <a href="https://github.com/ikeralvis/strava-DS5-2" target="_blank" class="btn">Ver en
+                            GitHub</a>
                     </div>
                 </div>
-                <p>Puedes ver más proyectos en mi perfil de GitHub:</p>
             </section>
 
-            <section id="contacto" class="content">
+            <section id="contacto" class="content-section">
                 <h2>Contacto</h2>
-                <p>Si te interesa colaborar conmigo o tienes alguna pregunta, no dudes en contactarme.</p>
+                <p>Si te interesa colaborar en un proyecto o necesitas ayuda, no dudes en escribirme.</p>
+                <p><strong>Email:</strong> <a href="mailto:iker.a@opendeusto.es">iker.a@opendeusto.es</a></p>
             </section>
         </main>
     </div>
-
-    <footer>
-        <p>&copy; 2025 Iker Alvis</p>
-    </footer>
 </body>
+
 </html>
