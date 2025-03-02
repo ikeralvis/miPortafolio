@@ -195,7 +195,8 @@
                             <span class="tech-tag">Java</span>
                             <span class="tech-tag">Spring Boot</span>
                             <span class="tech-tag">REST API</span>
-                            <span class="tech-tag">JPA/Hibernate</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Thymleef</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/ikeralvis/StravaCliente" target="_blank"
@@ -220,7 +221,7 @@
                             </div>
                             <div class="contact-details">
                                 <h4>Email</h4>
-                                <a href="mailto:ikeralvis@example.com">ikeralvis@example.com</a>
+                                <a href="mailto:iker.a@opendeusto.es">iker.a@opendeusto.es</a>
                             </div>
                         </div>
                         <div class="contact-method">
@@ -328,6 +329,26 @@
         if (skillsSection) {
             skillsObserver.observe(skillsSection);
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      // Cuando el elemento es visible
+      if (entry.isIntersecting) {
+        // Añadir clase para activar la animación
+        const highlights = entry.target.querySelectorAll('.highlight');
+        highlights.forEach(highlight => {
+          highlight.classList.add('visible');
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+  
+  // Observar las secciones que contienen elementos highlight
+  document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
+  });
+});
     </script>
 
     
